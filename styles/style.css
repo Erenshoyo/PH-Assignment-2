@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-primary {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Shared design */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+    max-width: 1440px;
+} */
+.orange{
+    color: #FEA301;
+}
+.skyBlue{
+    color: #01ACFD;
+}
+.lightSkyBlue{
+    color: #05D4DF;
+}
+.purple{
+    color: #5D58EF;
+}
+/* Navbar design */
+.navbar{
+    margin: 20px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-image{
+    width: 62px;
+    height: 62px;
+}
+.logo-heading{
+    font-size: 2rem;
+}
+.nav-menu{
+    
+}
+.nav-menu a{
+    text-decoration: none;padding-left: 32px;
+}
+.nav-btn{
+    padding: 10px 60.5px;
+    background-color: #FEA301;
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 12px;
+}
+/* Banner design */
+.banner{
+    margin: 0px 140px;
+    display: flex;
+    align-items: center;
+}
+.banner-text{
+    padding-right: 50px;
+}
+.banner-heading{
+    font-size: 3.5rem;
+}
+.banner-para{
+    padding: 24px 0px;
+    font-size: 1.25rem;
+}
+.banner-btn{
+    padding: 10px 60.5px;
+    background-color: black;
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 12px;
+}
