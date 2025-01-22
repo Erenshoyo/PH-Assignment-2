@@ -11,9 +11,9 @@
   margin: 0px;
   padding: 0px;
 }
-body {
+/* body {
   max-width: 1440px;
-}
+} */
 .orange {
   color: #fea301;
 }
@@ -49,8 +49,6 @@ body {
 }
 .logo-heading {
   font-size: 2rem;
-}
-.nav-menu {
 }
 .nav-menu a {
   text-decoration: none;
@@ -93,6 +91,7 @@ body {
 /* Curriculum design */
 .curriculum {
   margin: 0px 140px;
+  background-image: url(../assets/bg.png);
 }
 .curri-heading {
   margin-top: 60px;
@@ -203,4 +202,174 @@ body {
   border: none;
   border-radius: 100%;
   background-color: orange;
+}
+/* Story Section */
+.story {
+  background: url(../assets/bg.png),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  padding-bottom: 80px;
+}
+.story-heading {
+  margin-top: 60px;
+  font-size: 2.875rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.story-card-1,
+.story-card-2,
+.story-card-3,
+.story-card-4,
+.story-card-5 {
+  background-color: white;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.story-card-1 {
+  grid-area: story-card-1;
+  grid-row: span 2;
+}
+.story-card-2 {
+  grid-area: story-card-2;
+}
+.story-card-3 {
+  grid-area: story-card-3;
+}
+.story-card-4 {
+  grid-area: story-card-4;
+}
+.story-card-5 {
+  grid-area: story-card-5;
+}
+.story-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px 16px 0px 0px;
+  display: block;
+}
+.story-card-container {
+  margin: 0px 140px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "story-card-1 story-card-2 story-card-3"
+    "Story-card-1 story-card-4 story-card-5";
+}
+.date,
+.big-date {
+  position: absolute;
+  border-radius: 48px;
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 24px;
+  left: 38px;
+}
+.big-date {
+  background: rgb(60, 216, 232);
+  top: 230px;
+}
+.date {
+  left: 20px;
+  top: 180px;
+}
+.story-card-2 .date {
+  background: #9fd167;
+}
+
+.story-card-3 .date {
+  background: #6366f1;
+}
+
+.story-card-4 .date {
+  background: #9fd167;
+}
+
+.story-card-5 .date {
+  background: #9fd167;
+}
+.story-card-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 38px;
+  margin: 0px;
+}
+.story-card-2 .story-card-heading,
+.story-card-3 .story-card-heading,
+.story-card-4 .story-card-heading,
+.story-card-5 .story-card-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 20px;
+  margin: 0px;
+}
+.story-card-para {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0px 38px 24px;
+  margin: 0px;
+}
+story-card-2,
+.story-card-3,
+.story-card-4,
+.story-card-5 {
+  display: flex;
+  flex-direction: column;
+  height: 295px;
+}
+
+.story-card-2 .story-card-image,
+.story-card-3 .story-card-image,
+.story-card-4 .story-card-image,
+.story-card-5 .story-card-image {
+  height: 200px;
+  object-fit: cover;
+}
+.story-btn {
+  margin: 60px 625px 30px;
+  padding: 10px 60.5px;
+  background-color: black;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+}
+/* Footer design */
+.footer {
+  background-color: #01acfd;
+}
+.footer-container {
+  padding: 123px 140px 174px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 20px;
+}
+.kids-edu-con {
+  display: flex;
+  align-items: center;
+}
+.kids-edu-con > h3 {
+  color: white;
+}
+.kids-edu > p {
+  padding: 15px 10px;
+  color: white;
+  width: 400px;
+}
+.about > h3{
+  color: white;
+  padding-bottom: 32px;
+}
+.keep > h3{
+  color: white;
+  padding-bottom: 32px;
 }
