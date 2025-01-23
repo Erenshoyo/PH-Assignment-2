@@ -203,6 +203,11 @@
   border-radius: 100%;
   background-color: orange;
 }
+.sign-btn:hover {
+  color: orange;
+  background-color: white;
+  border: 2px solid orange;
+}
 /* Story Section */
 .story {
   background: url(../assets/bg.png),
@@ -311,7 +316,7 @@
   padding: 0px 38px 24px;
   margin: 0px;
 }
-story-card-2,
+.story-card-2,
 .story-card-3,
 .story-card-4,
 .story-card-5 {
@@ -365,11 +370,114 @@ story-card-2,
   color: white;
   width: 400px;
 }
-.about > h3{
+.about > h3 {
   color: white;
   padding-bottom: 32px;
 }
-.keep > h3{
+.keep > h3 {
   color: white;
   padding-bottom: 32px;
+}
+/* Mobile Responsiveness */
+@media screen and (max-width: 576px) {
+  /* body{
+    max-width: auto;
+  } */
+  .navbar {
+    margin: 20px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: none;
+  }
+
+  .DD-image:hover .dropdown {
+    display: block;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .banner-text {
+    padding-right: 50px;
+  } */
+  .banner-heading {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .banner-para {
+    padding: 24px 0px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .banner-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60.5px;
+    background-color: black;
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 12px;
+  }
+  .curri-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .curri-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .story-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .story-card-1
+  .story-card-2,
+  .story-card-3,
+  .story-card-4,
+  .story-card-5{
+    width: 174px;
+    height: 180px;
+  }
+  .story-card-1 {
+  }
+  .story-card-2 {
+  }
+  .story-card-3 {
+  }
+  .story-card-{
+  }
+  .story-card-5 {
+  }
+  .footer-container{
+    margin: 0;
+    flex-direction: column;
+  }
 }
